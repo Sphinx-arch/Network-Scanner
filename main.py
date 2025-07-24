@@ -1,28 +1,42 @@
 import socket
-import ipaddress
+from concurrent.futures import ThreadPoolExecutor, as_completed
 
-def scan(ip, port):
+# ---- Scan a single port ----
+def scan_port(ip, port):
     try:
         s = socket.socket()
-        s.settimeout(0.5)
+        s.settimeout(0.5)  # short timeout = faster scanning
         s.connect((ip, port))
-        print(f"[+] Open:{ip}: {port} is open")
-        s.close()
+        return port
     except:
-        pass
+        return None
+    finally:
+        s.close()
 
-def main():
-    ip = input("Enter the IP address/subnet: ")
-    port = int(input("Enter the port number: "))
+# ---- Scan a list of ports using threads ----
+def scan_ports(ip, port_range=(1, 1024), max_threads=100):
+    open_ports = []
 
-    try:
-        # Handle the subnet or single IP address
-        net = ipaddress.ip_network(ip, strict=False)
-        for ip in net.hosts(): # Skips network and broadcast addresses
-            scan(str(ip), port)
-    except ValueError:
-        # if it's not a subnet assume it's a single Ip address
-        scan(ip, port)
+    print(f"\n[🔍] Scanning {ip} from port {port_range[0]} to {port_range[1]}...")
 
+    with ThreadPoolExecutor(max_threads) as executor:
+        futures = [executor.submit(scan_port, ip, port) for port in range(port_range[0], port_range[1] + 1)]
+
+        for future in as_completed(futures):
+            result = future.result()
+            if result:
+                open_ports.append(result)
+                print(f"[+] Port {result} is OPEN")
+
+    if not open_ports:
+        print("[-] No open ports found.")
+    else:
+        print(f"\n✅ Scan complete. Open ports: {open_ports}")
+
+# ---- Main Logic ----
 if __name__ == "__main__":
-    main()  
+    target_ip = input("Enter IP address to scan: ").strip()
+    start_port = int(input("Enter start port (e.g. 1): ").strip())
+    end_port = int(input("Enter end port (e.g. 1024): ").strip())
+
+    scan_ports(target_ip, (start_port, end_port))
