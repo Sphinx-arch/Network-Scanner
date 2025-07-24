@@ -1,16 +1,32 @@
-# Network-Scanner
-A lightweight and beginner-friendly Python script to scan a specific IP address or an entire subnet for open ports.
+# 🔍 Network Scanner in Python
 
-## Features
+A lightweight, terminal-based network scanner that identifies open ports on a target IP address or subnet. Built using Python sockets and threading for faster scanning.
 
-- Scan a **single IP** or an **entire subnet** (e.g. `192.168.1.0/24`)
-- Accepts **port range** input (e.g. 20-100)
-- Fast scanning using **multithreading**
-- Simple CLI interface
-- Educational, readable code — perfect for beginners
+---
 
-## Requirements
+## 📌 Features
+
+- Scan a **single IP address**
+- Scan an **entire subnet (CIDR format)**
+- Automatically detects **open ports**
+- Fast execution using **multi-threading**
+- Clean, minimal CLI interface
+
+---
+
+## ⚙️ Tech Stack
 
 - Python 3.x
+- `socket` module
+- `ipaddress` module
+- `threading` module
 
-No external libraries are required — only built-in modules like `socket`, `ipaddress`, and `threading`.
+---
+
+## 🛠️ How to Use
+
+### 1. Clone the Repo
+
+```bash
+git clone https://github.com/yourusername/network-scanner.git
+cd network-scanner
