@@ -8,17 +8,17 @@ This project is a Python-based network security tool designed to identify expose
 
 Modern networks often expose unnecessary or misconfigured services that can be discovered through basic reconnaissance techniques. Attackers commonly exploit such exposed services as entry points into a network. Manual network enumeration is time-consuming and prone to error. This project aims to automate network exposure detection to assist in identifying visible services and reducing security risks at an early stage.
 
-##🎯 Objectives
+## 🎯 Objectives
 
->Identify live hosts within a given IP address or subnet
+- Identify live hosts within a given IP address or subnet
 
->Detect open ports and associated network services
+- Detect open ports and associated network services
 
->Perform service version identification where possible
+- Perform service version identification where possible
 
->Highlight potentially risky exposed services
+- Highlight potentially risky exposed services
 
->Provide structured output for security analysis
+- Provide structured output for security analysis
 
 ## 🏗 Architecture & Workflow
 
@@ -43,59 +43,59 @@ Structured Output
 
 ## 🛠 Tools & Technologies
 
->Python – Core scripting and automation
+- Python – Core scripting and automation
 
->Nmap – Network scanning and service enumeration
+- Nmap – Network scanning and service enumeration
 
->Linux – Testing environment
+- Linux – Testing environment
 
 ## ✨ Features
 
->Automated detection of live hosts
+- Automated detection of live hosts
 
->Identification of open TCP ports
+- Identification of open TCP ports
 
->Detection of running network services
+- Detection of running network services
 
->Service version enumeration (when available)
+- Service version enumeration (when available)
 
->Fast and repeatable network reconnaissance
+- Fast and repeatable network reconnaissance
 
 ## 🚀 How It Works
 
-The user provides a target IP address or subnet.
+- The user provides a target IP address or subnet.
 
-The scanner performs host discovery to identify active devices.
+- The scanner performs host discovery to identify active devices.
 
-Open ports on active hosts are scanned.
+- Open ports on active hosts are scanned.
 
-Running services and versions are detected.
+- Running services and versions are detected.
 
-Results are displayed in a structured and readable format.
+- Results are displayed in a structured and readable format.
 
 ## 🔍 Security Relevance
 
 Exposed services such as outdated SSH, HTTP, or database ports are commonly targeted by attackers during reconnaissance. By identifying these services early, organizations can:
 
->Disable unnecessary services
+- Disable unnecessary services
 
->Restrict access using firewalls
+- Restrict access using firewalls
 
->Update exposed software
+- Update exposed software
 
->Reduce the overall attack surface
+- Reduce the overall attack surface
 
 This tool demonstrates the initial reconnaissance phase of real-world cyber attacks and highlights the importance of proactive network hardening.
 
 ## 📚 Learning Outcomes
 
->Gained hands-on experience with network reconnaissance techniques
+- Gained hands-on experience with network reconnaissance techniques
 
->Developed a deeper understanding of port scanning and service enumeration
+- Developed a deeper understanding of port scanning and service enumeration
 
->Learned how attackers identify exposed services in real environments
+- Learned how attackers identify exposed services in real environments
 
->Improved understanding of network-level security risks and defenses
+- Improved understanding of network-level security risks and defenses
 
 ## ⚠ Ethical Use Disclaimer
 
@@ -104,21 +104,30 @@ Users are responsible for ensuring they have explicit permission before scanning
 
 ## 🔮 Future Enhancements
 
->Vulnerability mapping using CVE databases
+- Vulnerability mapping using CVE databases
 
->Risk scoring for exposed services
+- Risk scoring for exposed services
 
->Web-based dashboard for visualization
+- Web-based dashboard for visualization
 
->Authentication-based scanning
+- Authentication-based scanning
 
->Integration with SIEM or SOC tools
+- Integration with SIEM or SOC tools
 
 ## 📁 Project Structure
-├── scanner.py
-├── requirements.txt
-├── README.md
-└── output/
+## Project Structure
+
+* `.` (scanner.py)
+  * `README.md`
+  * `package.json`
+  * `src/` (Source files)
+    * `index.js`
+    * `utils.js`
+  * `docs/` (Documentation)
+    * `INSTALL.md`
+  * `assets/` (Images, static files)
+    * `logo.png`
+
 
 ## 📌 Conclusion
 
