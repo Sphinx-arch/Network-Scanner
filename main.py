@@ -1,7 +1,7 @@
 import socket
 from concurrent.futures import ThreadPoolExecutor, as_completed
 
-# ---- Scan a single port ----
+# Scan a single port 
 def scan_port(ip, port):
     try:
         s = socket.socket()
@@ -13,7 +13,7 @@ def scan_port(ip, port):
     finally:
         s.close()
 
-# ---- Scan a list of ports using threads ----
+# Scan a list of ports using threads 
 def scan_ports(ip, port_range=(1, 1024), max_threads=100):
     open_ports = []
 
@@ -33,10 +33,11 @@ def scan_ports(ip, port_range=(1, 1024), max_threads=100):
     else:
         print(f"\n✅ Scan complete. Open ports: {open_ports}")
 
-# ---- Main Logic ----
+# Main Logic 
 if __name__ == "__main__":
     target_ip = input("Enter IP address to scan: ").strip()
     start_port = int(input("Enter start port (e.g. 1): ").strip())
     end_port = int(input("Enter end port (e.g. 1024): ").strip())
 
     scan_ports(target_ip, (start_port, end_port))
+
