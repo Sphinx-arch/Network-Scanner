@@ -1,14 +1,14 @@
-🔐 Automated Network Exposure Detection Tool
+# 🔐 Automated Network Exposure Detection Tool
 
-📌 Overview
+## 📌 Overview
 
 This project is a Python-based network security tool designed to identify exposed network services and potential attack surfaces by performing automated host discovery, port scanning, and service detection within a given network range. The tool helps security analysts and students understand how attackers enumerate networks and how defenders can proactively reduce exposure.
 
-🧠 Problem Statement
+## 🧠 Problem Statement
 
 Modern networks often expose unnecessary or misconfigured services that can be discovered through basic reconnaissance techniques. Attackers commonly exploit such exposed services as entry points into a network. Manual network enumeration is time-consuming and prone to error. This project aims to automate network exposure detection to assist in identifying visible services and reducing security risks at an early stage.
 
-🎯 Objectives
+##🎯 Objectives
 
 >Identify live hosts within a given IP address or subnet
 
@@ -20,7 +20,7 @@ Modern networks often expose unnecessary or misconfigured services that can be d
 
 >Provide structured output for security analysis
 
-🏗 Architecture & Workflow
+## 🏗 Architecture & Workflow
 
 Target IP / Subnet
 
@@ -40,7 +40,8 @@ Result Aggregation
 Structured Output
 
 
-🛠 Tools & Technologies
+
+## 🛠 Tools & Technologies
 
 >Python – Core scripting and automation
 
@@ -48,7 +49,7 @@ Structured Output
 
 >Linux – Testing environment
 
-✨ Features
+## ✨ Features
 
 >Automated detection of live hosts
 
@@ -60,7 +61,7 @@ Structured Output
 
 >Fast and repeatable network reconnaissance
 
-🚀 How It Works
+## 🚀 How It Works
 
 The user provides a target IP address or subnet.
 
@@ -72,7 +73,7 @@ Running services and versions are detected.
 
 Results are displayed in a structured and readable format.
 
-🔍 Security Relevance
+## 🔍 Security Relevance
 
 Exposed services such as outdated SSH, HTTP, or database ports are commonly targeted by attackers during reconnaissance. By identifying these services early, organizations can:
 
@@ -86,7 +87,7 @@ Exposed services such as outdated SSH, HTTP, or database ports are commonly targ
 
 This tool demonstrates the initial reconnaissance phase of real-world cyber attacks and highlights the importance of proactive network hardening.
 
-📚 Learning Outcomes
+## 📚 Learning Outcomes
 
 >Gained hands-on experience with network reconnaissance techniques
 
@@ -96,12 +97,12 @@ This tool demonstrates the initial reconnaissance phase of real-world cyber atta
 
 >Improved understanding of network-level security risks and defenses
 
-⚠ Ethical Use Disclaimer
+## ⚠ Ethical Use Disclaimer
 
 This tool is developed strictly for educational purposes and authorized security testing only.
 Users are responsible for ensuring they have explicit permission before scanning any network or system.
 
-🔮 Future Enhancements
+## 🔮 Future Enhancements
 
 >Vulnerability mapping using CVE databases
 
@@ -113,13 +114,13 @@ Users are responsible for ensuring they have explicit permission before scanning
 
 >Integration with SIEM or SOC tools
 
-📁 Project Structure
+## 📁 Project Structure
 ├── scanner.py
 ├── requirements.txt
 ├── README.md
 └── output/
 
-📌 Conclusion
+## 📌 Conclusion
 
 This project demonstrates how automated network reconnaissance can be used to identify exposed services and improve network security posture. It provides a strong foundation for understanding both offensive and defensive aspects of cyber security and serves as a practical learning tool for advanced security studies.
 
