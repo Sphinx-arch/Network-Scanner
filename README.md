@@ -21,6 +21,7 @@ Highlight potentially risky exposed services
 Provide structured output for security analysis
 
 🏗 Architecture & Workflow
+
 Target IP / Subnet
         ↓
 Host Discovery
