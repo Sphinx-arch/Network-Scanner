@@ -114,20 +114,6 @@ Users are responsible for ensuring they have explicit permission before scanning
 
 - Integration with SIEM or SOC tools
 
-## 📁 Project Structure
-## Project Structure
-
-* `.` (scanner.py)
-  * `README.md`
-  * `package.json`
-  * `src/` (Source files)
-    * `index.js`
-    * `utils.js`
-  * `docs/` (Documentation)
-    * `INSTALL.md`
-  * `assets/` (Images, static files)
-    * `logo.png`
-
 
 ## 📌 Conclusion
 
