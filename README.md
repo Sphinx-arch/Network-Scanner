@@ -74,7 +74,7 @@ Results are displayed in a structured and readable format.
 
 🔍 Security Relevance
 
->Exposed services such as outdated SSH, HTTP, or database ports are commonly targeted by attackers during reconnaissance. By identifying these services early, organizations can:
+Exposed services such as outdated SSH, HTTP, or database ports are commonly targeted by attackers during reconnaissance. By identifying these services early, organizations can:
 
 >Disable unnecessary services
 
@@ -84,7 +84,7 @@ Results are displayed in a structured and readable format.
 
 >Reduce the overall attack surface
 
->This tool demonstrates the initial reconnaissance phase of real-world cyber attacks and highlights the importance of proactive network hardening.
+This tool demonstrates the initial reconnaissance phase of real-world cyber attacks and highlights the importance of proactive network hardening.
 
 📚 Learning Outcomes
 
