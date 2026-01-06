@@ -23,16 +23,22 @@ Modern networks often expose unnecessary or misconfigured services that can be d
 🏗 Architecture & Workflow
 
 Target IP / Subnet
+
         ↓
 Host Discovery
+
         ↓
 Port Scanning
+
         ↓
 Service Detection
+
         ↓
 Result Aggregation
+
         ↓
 Structured Output
+
 
 🛠 Tools & Technologies
 
@@ -40,7 +46,7 @@ Structured Output
 
 >Nmap – Network scanning and service enumeration
 
-?Linux – Testing environment
+>Linux – Testing environment
 
 ✨ Features
 
@@ -65,23 +71,6 @@ Open ports on active hosts are scanned.
 Running services and versions are detected.
 
 Results are displayed in a structured and readable format.
-
-📊 Sample Output
-{
-  "host": "192.168.1.15",
-  "open_ports": [
-    {
-      "port": 22,
-      "service": "SSH",
-      "version": "OpenSSH 7.2"
-    },
-    {
-      "port": 80,
-      "service": "HTTP",
-      "version": "Apache 2.4.18"
-    }
-  ]
-}
 
 🔍 Security Relevance
 
